@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "com.unity.shadergraph": "12.1.2"
+  }
+}
