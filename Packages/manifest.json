@@ -1,5 +1,13 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [ "jp.keijiro" ]
+    }
+  ],
   "dependencies": {
-    "com.unity.shadergraph": "12.1.2"
+    "com.unity.shadergraph": "12.1.2",
+    "jp.keijiro.shadergraphassets": "1.0.6"
   }
 }
