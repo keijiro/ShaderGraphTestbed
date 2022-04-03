@@ -410,9 +410,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -807.5,
-            "y": 248.50006103515626,
+            "y": 258.00006103515627,
             "width": 252.5,
-            "height": 326.0
+            "height": 325.99993896484377
         }
     },
     "m_Slots": [
@@ -442,7 +442,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "HudElementWing",
     "m_FunctionSource": "",
-    "m_FunctionBody": "float mask = min(-Mask, Wing);\nmask = saturate(mask / fwidth(mask));\n\nfloat wing = Wing * Param.x + Param.y;\nwing = saturate((0.25 - abs(0.5 - frac(wing))) / fwidth(wing));\n\nOut = min(wing, mask);"
+    "m_FunctionBody": "float mask = min(-Mask, Wing);\nmask = saturate(mask / fwidth(mask));\n\nfloat wing = Wing * Param.x;\nwing = (wing < 0.5) ? 0 : wing + Param.y;\nwing = saturate((0.25 - abs(0.5 - frac(wing))) / fwidth(wing));\n\nOut = min(wing, mask);"
 }
 
 {
