@@ -63,6 +63,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Flash: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -81,7 +82,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Extent: {r: 0.45, g: 0.45, b: 0.45, a: 0}
-    - _Wing: {r: 20, g: 0, b: 0, a: 0}
+    - _Wing: {r: 20, g: -0.25, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &8643099405586155775
 MonoBehaviour:
